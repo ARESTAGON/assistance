@@ -20,6 +20,13 @@
     border-bottom: 1px solid #808080;
   }
 </style>
+function copytext(el) {
+   var $tmp = $("<textarea>");
+   $("body").append($tmp);
+   $tmp.val($(el).text()).select();
+   document.execCommand("copy");
+   $tmp.remove();
+}
 </head>
 <body>
 <center><div class="line"></div><br>
@@ -33,7 +40,10 @@
 <br><br>
 💳 Номер Картки 💳
 <br>
-5375 4112 1065 2801
+<div id="text1">
+<p><b>5375 4112 1065 2801</b></p>
+<p>Копіювати номер</p> 
+</div>
 <br>
 🏦 <a href="https://send.monobank.ua/jar/7VGkAFuA6j">Посилання на збір</a> 🏦
 <br><br><div class="line"></div><br>
