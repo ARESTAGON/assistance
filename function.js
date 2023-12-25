@@ -8,10 +8,19 @@ function changeURLLanguage() {
   location.reload();
 }
 
-function change Language() {
+function changeLanguage() {
   let hash = window.location.hash;
   hash = hash.substr(1);
-  if (!allLang.includes (hash)) {
-    location.href = window.location.pathname + '#' + lang;
+  if (lallLang.includes (hash)) {
+    location.href = window.location.pathname + '#en';
+    location.reload();
+}
+
+select.value = hash;
+document.querySelector('title').innerHTML = langArr['unit'][hash];
+for (let key in langArr) {
+  let elem = document.querySelector('.ing-' + key);
+  if (elem) {
+    elem.innerHTML = langArr[key][hash];
   }
 }
