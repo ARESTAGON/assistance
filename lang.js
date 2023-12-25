@@ -3,7 +3,7 @@ const LangArr = {
         "en": "Armed Forces of Ukraine",
 	"ua": "Збройні сили України",
       },
-     "advert_1" {
+     "advert-1" {
 	"en": "Advertisement",
 	"ua": "Оголошення",
       },
