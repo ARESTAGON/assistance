@@ -1,5 +1,5 @@
 const LangArr = {
-     "title" {
+     "title-basic" {
         "en": "Armed Forces of Ukraine",
 	"ua": "Збройні сили України",
       },
