@@ -2,12 +2,12 @@
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    width: 300px;
+    width: 396px;
     -webkit-overflow-scrolling: touch;
 }
 .slide { 
     flex: none;
     scroll-snap-align: start;
-    width: 300px;
+    width: 396px;
     text-align: center;
 }
